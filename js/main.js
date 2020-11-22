@@ -1,5 +1,14 @@
 "use strict"
 
+let message = 'ВсЕ ОК';
+console.log(message);
+console.log(message);
+message = 'ВсЕ НЕ ОК';
+console.log(message);
+console.log(message);
+const BLACK_HEX = '#000000';
+
+
 // Объявление переменных  let vs var, const
 
 //TODO: 
@@ -16,20 +25,21 @@
 
 //TODO: через typeof() проверить типы переменных, также проверить переменную nothing, подпишите рядом комментарием
 
-let num = 5;
-let string = "5";
-let bool = true;
-let undef;
+let num = 5;//number
+let string = "5";//string
+let bool = true;//bolean
+let undef;//underfined
+console.log(typeof(undef))
 
 let person = {
     name: "John",
     age: 20,
     have_dog: true,
 }
-//TODO вывести имя человека person
+console.log(person.name)//TODO вывести имя человека person
 
 let photo = ["cat.png", "cute_dog.png"];
-
+ console.log(photo[1])
 const COLOR_RED = '#ff0000';
 
 /*
@@ -49,7 +59,32 @@ const COLOR_RED = '#ff0000';
 
 */
 //TODO: спросить возраст пользователя и вывести следующим сообщением "Ваш возраст _ !"
+// let age = prompt("Введите возраст", "18")
+// alert ("Ваш возраст"+ age + "!")
 //TODO: создать свою функцию, которая будет проверять возраст пользователя
+
+// if(109 >= age >=99){
+// alert("ты живучий")
+
+// } else if(age >= 110){
+//   alert("..........")
+// }else if (100 > age >= 70){
+//   alert("ты старичооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооок")
+//  } else if ( age < 18) {
+//   alert("Иди в школу!")
+//  }
+//  else {
+//    alert("иди работай!")
+
+//   }
+let food_is = prompt("есть ли еда в холодильнике","yes")
+  while(food_is == "yes"){
+    console.log('ем')
+    console.log('играю')
+    console.log('проверка на еду')
+    food_is = prompt("есть ли еда в холодильнике","yes")
+  }
+    console.log('ждать доставку еды')
 
 /*
 Преобразование типов
